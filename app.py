@@ -47,8 +47,7 @@ def error404():
 
 @app.route('/')
 def root():
-    """Not implemented yet"""
-    return render_template('404.html')
+    return render_template('survey.html', survey_name=survey_name)
 
 
 @app.route('/survey/<survey_name>')
