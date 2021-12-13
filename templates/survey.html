@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Survey</title>
+	<meta name="viewport" content="width=device-width"/>
+	<script src="/js/knockout-latest.js"></script>
+	<script src="/js/survey.ko.min.js"></script>
+	<link href="/css/modern.css" type="text/css" rel="stylesheet"/>
+	<link rel="stylesheet" href="/css/index.css">
+	<script src="/js/survey-handler.js"></script>
+	<script>load_survey("{{survey_name}}")</script>
+</head>
+<body>
+	<div id="surveyElement" style="display:inline-block;width:100%;">
+		<survey :survey='survey'/>
+	</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+{
+  "title": "Privacy Policy Terminology Survey",
+  "showQuestionNumbers": "off",
+  "triggers": [
+    {
+      "type": "complete"
+    }
+  ],
+  "pages": [ 
+    {
+      "questions": [
+        {
+          "type": "html",
+          "name": "instructions3",
+          "html": "<article>     <h2> Once you have finalized your answers from the previous set of questions, the correct definitions/context will be shown below. </h2>    </article>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "questionvis",
+          "isRequired": true,
+          "visibleIf": "{questionvis}='No'",
+          "title": "Have you selected your final answers from the previous set of questions?",
+          "colCount": 0,
+          "defaultValue": "No",
+          "choices": ["Yes", "No"]
+        },
+        {
+          "type": "matrixdropdown",
+          "name": "privacypolicyre",
+          "title": "Please indicate your thoughts on the following terms with their correct definitions/context given",
+          "visibleIf": "{questionvis}='Yes'",
+          "columns": [
+            {
+              "name": "col1",
+              "cellType": "radiogroup",
+              "showInMultipleColumns": true,
+              "isRequired": true,
+              "choices": [
+                "The term is appropriate for its meaning.", 
+                "The term is appropriate but should be defined within the document if it is used.", 
+                "The term is vague, misleading, or otherwise confusing and can be reworded."
+              ]
+            }, {
+              "name": "reword",
+              "title": "Type any term(s) that you think could be more appropriate or less confusing. This section is not required.",
+              "cellType": "comment"
+            }
+          ],
+          "rows": [
+            "A \"privacy policy\" is a legal document that says how users' data will be collected and used.",
+            "\"Keys\" describe information that is necessary to read/decode messages.",
+            "Websites are still able to track you if you send a \"Do Not Track request\"",
+            "A company storing information about you using \"browser web storage\" means the information is stored on your machine or device.",
+            "A company storing information about you using \"local storage\" also means the information is stored on your machine or device.",
+            "\"Metadata\" describes data about data or files (including size, time, location, message recipient(s), uploader(s))",
+            "A company using a \"cryptographic hash\" means they store information that allows them to check your password, but your password is not stored in plain text.",
+            "A \"pixel tag\" is a way to monitor which sites users visit using a small image.",
+            "A \"web beacon\" is also a way to monitor which sites users visit using a small image.",
+            "\"Persistent cookies\" can be manually deleted and have experation dates.",
+            "\"Incognito mode\"/\"private browsing\" does not make you anonymous on the internet. The data is stored on machines or servers belonging to either the websites browsed or third parties.",
+            "\"De-identified information\" can be tied to you as an individual.",
+            "\"Anonymized information\" can also be tied to you as an individual."
+          ]
+        }
+      ]
+    }
+  ]
+}

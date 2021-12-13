@@ -1,0 +1,467 @@
+{
+  "title": "Privacy Policy Terminology Survey",
+  "showQuestionNumbers": "off",
+  "triggers": [
+    {
+      "type": "complete",
+      "expression": "{consent} = 'No'"
+    }
+  ],
+  "pages": [
+    {
+      "elements": [
+        {
+          "type": "panel",
+          "elements": [
+            {
+              "type": "html",
+              "name": "consentform",
+              "html": "<article>  <h1 style=\"text-align: center\">    Invitation to be a Part of a Research Study  </h1>  <h4>    Principal Investigator: Nathan Garay and Jamal Dari<br />Study Sponsor:    University of Detroit Mercy  </h4>  <div>    <p>      The purpose of this study is to investigate your understanding of technical terms that may be commonly found in privacy policies and whether you believe commonly misunderstood verbiage is appropriate or can be reworded for improved comprehension. <br /><br />Your participation in the study is      completely voluntary and you can stop your participation at any time without any penalty or      loss. This survey should take you 20-25 minutes. You will be one of about      30 participants.<br /><br />This project is unlikely to have more than      minimal risk. The study team does not foresee or anticipate any risk      greater than that encountered in your routine daily activities.<br /><br />All      of your responses will be kept anonymous beyond the demographic      questions.<br /><br />Some people who are part of this study may receive      the benefit of better understanding future privacy policies they may encounter and      changing their behavior regarding the acceptance of privacy policies. <br /><br />The study is paid for by the University of      Detroit Mercy and, therefore, there will be no cost to you aside from your      time to answer the survey      questions<br /><br />You will not be identified in any      reports on this study. Records will be kept confidential to the extent      provided by federal, state, and local law. However, the Institutional      Review Board, the sponsor of the study, or university and government      officials responsible for monitoring this study may inspect these      records.<br /><br />Since this study will collect limited data from you, you      should be aware that the data will not be used for commercial profit.<br /><br />If      significant new knowledge is obtained during the course of this research      which may relate to your willingness to continue to be involved in this      study, you will be informed of this knowledge.<br /><br />Should you have      questions regarding your rights as a research participant, or wish to      obtain information, ask questions, or discuss with someone other than the      researcher(s), please contact the Institutional Review Board at: Michelle      A. Wheater, Ph.D., Professor of Integrated Biomedical Sciences, School of      Dentistry, Room 430, 2700 Martin Luther King Jr. Blvd, Detroit, MI 48208,      (313) 494-6634, wheatemi@udmercy.edu.<br /> <br /> The Principal Investigators      (Nathan Garay and Jamal Dari) can be reached by email at      garaynf@udmercy.edu and/or darija@udmercy.edu. <br /><br />One copy of this document will be kept together      with the research records of this study.    </p>  </div></article>"
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "consent",
+          "isRequired": true,
+          "title": "I have read (or been informed of) the information given above. Nathan Garay and/or Jamal Dari have offered to answer any questions I have concerning the study. I agree and give my consent to be a part of this study. ",
+          "colCount": 0,
+          "choices": ["Yes", "No"]
+        }
+      ]
+    },
+    {
+      "questions": [
+        {
+          "type": "dropdown",
+          "name": "gender",
+          "title": "To which gender do you most identify?",
+          "isRequired": true,
+          "hasOther": true,
+          "choices": ["Male", "Female", "Prefer not to say"],
+          "otherText": "Other (Please specify)"
+        },
+        {
+          "type": "dropdown",
+          "name": "education",
+          "title": "What is the highest degree or level of education you have completed?",
+          "isRequired": true,
+          "choices": [
+            "None or grades 1-8",
+            "Some high school",
+            "High school graduate, diploma or GED certificate",
+            "Technical, trade, or vocational school",
+            "Some college",
+            "Associate degree",
+            "Bachelor's degree",
+            "Some postgraduate or professional education, no postgraduate degree",
+            "Postgraduate or professional degree, including master's, doctorate, medical, or law degree'"
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "income",
+          "title": "What was your total household income before taxes in the last year?",
+          "isRequired": true,
+          "choices": [
+            "Less than $25,000",
+            "$25,000 to $49,999",
+            "$50,000 to $74,999",
+            "$75,000 to $99,999",
+            "$100,000 to $149,999",
+            "$150,000 to $200,000",
+            "$200,000 or more"
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "ethnicity",
+          "title": "Are you of Hispanic, Latino, or Spanish origin?",
+          "isRequired": true,
+          "choices": ["Yes", "No"]
+        },
+        {
+          "type": "checkbox",
+          "name": "race",
+          "title": "Which of the following best describes you? Select all that apply",
+          "isRequired": true,
+          "colCount": 1,
+          "hasOther": true,
+          "choices": [
+            "White",
+            "Black or African American",
+            "Asian",
+            "American Indian or Alaska Native",
+            "Middle Eastern or North African",
+            "Native Hawaiian or Other Pacific Islander"
+          ],
+          "otherText": "Other (Please specify)"
+        },
+        {
+          "type": "dropdown",
+          "name": "employment",
+          "title": "What is your current employment status?",
+          "isRequired": true,
+          "hasOther": true,
+          "choices": [
+            "Employed full time",
+            "Employed part time",
+            "Unemployed looking for work",
+            "Unemployed not looking for work",
+            "Retired",
+            "Student",
+            "Unable to work"
+          ],
+          "otherText": "Other (Please specify)"
+        },
+        {
+          "type": "dropdown",
+          "name": "tech",
+          "title": "Have you ever received formal training in computer science, software engineering, IT, computer networks, or a related technical field?",
+          "isRequired": true,
+          "choices": ["Yes", "No"]
+        }
+      ]
+    },
+    {
+      "elements": [
+        {
+          "type": "radiogroup",
+          "name": "past",
+          "isRequired": true,
+          "title": "Have you read a privacy policy in the last 3 months?",
+          "colCount": 1,
+          "choices": [
+            "Yes",
+            "No",
+            "I don't know"
+          ]
+        }, {
+          "type": "radiogroup",
+          "name": "often",
+          "isRequired": true,
+          "title": "How often do you read privacy policies?",
+          "colCount": 1,
+          "choices": [
+            "Always",
+            "Usually",
+            "About half the time",
+            "Rarely",
+            "Never"
+          ]
+        }, {
+          "type": "checkbox",
+          "name": "behavior",
+          "isRequired": true,
+          "title": "When you read privacy policies, which best describes the way that you read them? Select all that apply",
+          "colCount": 1,
+          "choices": [
+            "Read thoroughly",
+            "Skim",
+            "Look for key words",
+            "Look at section headers",
+            "Use third-party tools",
+            "I don't read privacy policies"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "information",
+      "questions": [
+        {
+          "type": "panel",
+          "elements": [
+            {
+              "type": "html",
+              "name": "instructions",
+              "html": "<article>     <h1 style='text-align:center'>     Now we will ask 15 questions to explore your intreptation of certain terms that are often used in privacy policies. <br /><br /> Please respond using only your prior knowledge; do NOT consult search engines such as Google.     </h1>    </article>"
+            }
+          ]
+		}
+	  ]
+  	}, 
+    {
+      "questions": [
+        {
+          "type": "radiogroup",
+          "name": "privacypolicy",
+          "isRequired": true,
+          "title": "Which of these best describes the main purpose of a privacy policy?",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "It explains how your data will be protected",
+            "It is a legal document that says how users' data will be collected and used",
+            "It explains how the company keeps confidential the information it collects on users",
+            "It says that the company will not share users' data with other sites or companies without permission",
+            "I don't know"
+          ]
+        }, {
+          "type": "radiogroup",
+          "name": "keys",
+          "isRequired": true,
+          "title": "Imagine that a company's data use policy states that, \"We store your keys for up to 30 days.\" What is the most accurate definition of keys in this statement?",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "Passwords",
+            "Information necessary to read/decode messages",
+            "Files stored on the Internet",
+            "Information that allows you to access your account without logging in every time",
+            "I don't know"
+          ]
+        }, {
+          "type": "radiogroup",
+          "name": "donottrack",
+          "isRequired": true,
+          "title": " If you send a Do Not Track request, are websites able to track you?",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "Yes",
+            "No",
+            "I don't know"
+          ]
+        }, {
+          "type": "checkbox",
+          "name": "browser",
+          "isRequired": true,
+          "title": "Imagine that a company's data use policy states that, \"We use browser web storage to store information about you.\" Where does this mean that information about you can be stored? Select all that apply.",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "On your machine or device",
+            "On machines or servers that are onsite to the company",
+            "On machines or servers in your local area",
+            "On any machine or server",
+            "I don't know"
+          ]
+        }, {
+          "type": "checkbox",
+          "name": "local",
+          "isRequired": true,
+          "title": " Imagine that a company's data use policy states that, \"We use local storage to store information about you.\" Where does this mean that information about you can be stored? Select all that apply.",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "On your machine or device",
+            "On machines or servers that are onsite to the company",
+            "On machines or servers in your local area",
+            "On any machine or server",
+            "I don't know"
+          ]
+        }, {
+          "type": "radiogroup",
+          "name": "metadata",
+          "isRequired": true,
+          "title": "Imagine that a company's data use policy states that, \"We store metadata from your social media posts.\" What is the most accurate meaning of metadata in this statement?",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "Combined data from different sources",
+            "A better way of using data",
+            "A set of data or information",
+            "A large collection of data",
+            "Data about data or files (e.g., time, size, location)",
+            "I don't know"
+          ]
+        }, {
+          "type": "checkbox",
+          "name": "metadata2",
+          "isRequired": true,
+          "title": "Which of the following might be examples of metadata? Select all that apply.",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "Size of a file",
+            "Time a message was sent",
+            "Who an email or message was sent to",
+            "Location where a photo was taken",
+            "Who uploaded a shared file",
+            "I don't know"
+          ]
+        }, {
+          "type": "radiogroup",
+          "name": "cryptographichash",
+          "isRequired": true,
+          "title": "Imagine that a company says \"We store a cryptographic hash of your password.\" What is the most accurate meaning of cryptographic hash in this context?",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "We store an encrypted copy of your password",
+            "We store information that allows us to check your password, but we do store not your password in plain text",
+            "We store information that allows us to check your password, but no one will be able to learn your password from this information even if we get hacked",
+            "We store your password with extra security",
+            "I don't know"
+          ]
+        }, {
+          "type": "radiogroup",
+          "name": "pixeltag",
+          "isRequired": true,
+          "title": "Imagine that a company says \"We use pixel tags and other similar technologies.\" What is the most accurate definition of pixel tag in this context?",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "A way to identify an image",
+            "A small piece of color in an image",
+            "A way to monitor which sites users visit using a small image",
+            "A way to identify which people or objects are in an image",
+            "I don't know"
+          ]
+        }, {
+          "type": "radiogroup",
+          "name": "webbeacon",
+          "isRequired": true,
+          "title": " Imagine that a company says \"We use web beacons and other similar technologies.\" What is the most accurate definition of web beacons in this context?",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "A way to monitor which sites users visit using a small image",
+            "A tool that allows companies to access data on a user's device",
+            "A tool that transports data between servers",
+            "Identifies data that belongs to a specific user",
+            "I don't know"
+          ]
+        }, {
+          "type": "checkbox",
+          "name": "persistentcookies",
+          "isRequired": true,
+          "title": "When are persistent cookies deleted? Check all that apply.",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "You can manually delete them, and they are deleted then",
+            "They have an expiration date, and they are deleted then",
+            "When you close your browser",
+            "When you sign out of the website",
+            "Until you close the tab or navigate away from the website",
+            "Never",
+            "I don't know"
+          ]
+        }, {
+          "type": "radiogroup",
+          "name": "incognito",
+          "isRequired": true,
+          "title": "Does private browsing/incognito mode make you anonymous on the internet?",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "Yes",
+            "No",
+            "I don't know"
+          ]
+        }, {
+          "type": "checkbox",
+          "name": "incognito2",
+          "isRequired": true,
+          "title": "When using private browsing/incognito mode, where is data from your browsing session stored? Please select all that apply.",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "On your machine or device",
+            "On machines or servers belonging to the websites browsed",
+            "On machines or servers belonging to third parties",
+            "Nowhere",
+            "I don't know"
+          ]
+        }, {
+          "type": "radiogroup",
+          "name": "deidentified",
+          "isRequired": true,
+          "title": "Can de-identified information ever be tied to you as an individual?",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "Yes",
+            "No",
+            "I don't know"
+          ]
+        }, {
+          "type": "radiogroup",
+          "name": "anonymized",
+          "isRequired": true,
+          "title": " Can anonymized information ever be tied to you as an individual?",
+          "visibleIf": "{questionvis}='No'",
+          "colCount": 1,
+          "choices": [
+            "Yes",
+            "No",
+            "I don't know"
+          ]
+        }
+      ]
+    }, 
+    {
+      "elements": [
+        {
+          "type": "panel",
+          "elements": [
+            {
+              "type": "html",
+              "name": "instructions2",
+              "html": "<article>     <h1 style='text-align:center'> Next, you will be shown the definitions of the terms discussed on the previous page and asked whether you think the term is appropriate or not. <br/> <br/> If you would like to change any of your previous responses, do so now as you will not be able to when you begin the next section. </h1>    </article>"
+            }
+          ]
+		}
+      ]
+    },
+    {
+      "questions": [
+        {
+          "type": "html",
+          "name": "instructions3",
+          "html": "<article>     <h2> Once you have finalized your answers from the previous set of questions, the correct definitions/context will be shown below. </h2>    </article>"
+        },
+        {
+          "type": "radiogroup",
+          "name": "questionvis",
+          "isRequired": true,
+          "visibleIf": "{questionvis}='No'",
+          "title": "Have you selected your final answers from the previous set of questions?",
+          "colCount": 0,
+          "defaultValue": "No",
+          "choices": ["Yes", "No"]
+        },
+        {
+          "type": "matrixdropdown",
+          "name": "privacypolicyre",
+          "title": "Please indicate your thoughts on the following terms with their correct definitions/context given",
+          "visibleIf": "{questionvis}='Yes'",
+          "columns": [
+            {
+              "name": "col1",
+              "cellType": "radiogroup",
+              "showInMultipleColumns": true,
+              "isRequired": true,
+              "choices": [
+                "The term is appropriate for its meaning.", 
+                "The term is appropriate but should be defined within the document if it is used.", 
+                "The term is vague, misleading, or otherwise confusing and can be reworded."
+              ]
+            }, {
+              "name": "reword",
+              "title": "Type any term(s) that you think could be more appropriate or less confusing. This section is not required.",
+              "cellType": "comment"
+            }
+          ],
+          "rows": [
+            "A \"privacy policy\" is a legal document that says how users' data will be collected and used.",
+            "\"Keys\" describe information that is necessary to read/decode messages.",
+            "Websites are still able to track you if you send a \"Do Not Track request\"",
+            "A company storing information about you using \"browser web storage\" means the information is stored on your machine or device.",
+            "A company storing information about you using \"local storage\" also means the information is stored on your machine or device.",
+            "\"Metadata\" describes data about data or files (including size, time, location, message recipient(s), uploader(s))",
+            "A company using a \"cryptographic hash\" means they store information that allows them to check your password, but your password is not stored in plain text.",
+            "A \"pixel tag\" is a way to monitor which sites users visit using a small image.",
+            "A \"web beacon\" is also a way to monitor which sites users visit using a small image.",
+            "\"Persistent cookies\" can be manually deleted and have experation dates.",
+            "\"Incognito mode\"/\"private browsing\" does not make you anonymous on the internet. The data is stored on machines or servers belonging to either the websites browsed or third parties.",
+            "\"De-identified information\" can be tied to you as an individual.",
+            "\"Anonymized information\" can also be tied to you as an individual."
+          ]
+        }
+      ]
+    }
+  ]
+}
